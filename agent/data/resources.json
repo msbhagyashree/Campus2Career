@@ -1,0 +1,101 @@
+{
+  "resources": {
+    "recursion": [
+      {"title": "Recursion - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/recursion/"},
+      {"title": "Recursion in Programming - freeCodeCamp", "type": "article", "url": "https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/"},
+      {"title": "Recursion (CS50 Harvard) - YouTube", "type": "video", "url": "https://www.youtube.com/watch?v=mz6tAJMVmfM"},
+      {"title": "MIT 6.006 Lecture: Recursion and Dynamic Programming", "type": "course", "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"}
+    ],
+    "binary trees": [
+      {"title": "Binary Tree - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/binary-tree-data-structure/"},
+      {"title": "Binary Trees - Visualgo", "type": "practice", "url": "https://visualgo.net/en/bst"},
+      {"title": "Binary Tree Bootcamp - Back to Back SWE (YouTube)", "type": "video", "url": "https://www.youtube.com/watch?v=BHB0B1jFKQc"},
+      {"title": "Binary Trees - Programiz", "type": "article", "url": "https://www.programiz.com/dsa/binary-tree"}
+    ],
+    "linked lists": [
+      {"title": "Linked List Data Structure - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/data-structures/linked-list/"},
+      {"title": "Linked Lists for Technical Interviews - freeCodeCamp (YouTube)", "type": "video", "url": "https://www.youtube.com/watch?v=Hj_rA0dhr2I"},
+      {"title": "Linked Lists - Programiz", "type": "article", "url": "https://www.programiz.com/dsa/linked-list"},
+      {"title": "LeetCode Linked List Problems", "type": "practice", "url": "https://leetcode.com/tag/linked-list/"}
+    ],
+    "sorting algorithms": [
+      {"title": "Sorting Algorithms - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/sorting-algorithms/"},
+      {"title": "Sorting Algorithms Visualized - visualgo.net", "type": "practice", "url": "https://visualgo.net/en/sorting"},
+      {"title": "15 Sorting Algorithms in 6 Minutes - YouTube", "type": "video", "url": "https://www.youtube.com/watch?v=kPRA0W1kECg"},
+      {"title": "CS50 Sorts - Harvard OpenCourseWare", "type": "course", "url": "https://cs50.harvard.edu/x/2024/"}
+    ],
+    "dynamic programming": [
+      {"title": "Dynamic Programming - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/dynamic-programming/"},
+      {"title": "Dynamic Programming - MIT OpenCourseWare 6.006", "type": "course", "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"},
+      {"title": "5 Simple Steps for Solving Dynamic Programming Problems - YouTube", "type": "video", "url": "https://www.youtube.com/watch?v=oBt53YbR9Kk"},
+      {"title": "LeetCode Dynamic Programming Problems", "type": "practice", "url": "https://leetcode.com/tag/dynamic-programming/"}
+    ],
+    "big o notation": [
+      {"title": "Big O Notation - Khan Academy", "type": "course", "url": "https://www.khanacademy.org/computing/computer-science/algorithms"},
+      {"title": "Big O Cheat Sheet", "type": "article", "url": "https://www.bigocheatsheet.com/"},
+      {"title": "Big O Notation in 100 Seconds - Fireship (YouTube)", "type": "video", "url": "https://www.youtube.com/watch?v=g2o22C3CRfU"},
+      {"title": "Algorithm Complexity - CS50 Harvard", "type": "course", "url": "https://cs50.harvard.edu/x/2024/"}
+    ],
+    "pointers": [
+      {"title": "Pointers in C - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/pointers-in-c-and-c-set-1-introduction-arithmetic-and-array/"},
+      {"title": "Pointers and Memory - Stanford CS Education Library", "type": "documentation", "url": "http://cslibrary.stanford.edu/106/"},
+      {"title": "Pointers in C/C++ - Full Course (freeCodeCamp YouTube)", "type": "video", "url": "https://www.youtube.com/watch?v=zuegQmMdy8M"},
+      {"title": "C Programming - Pointers - Tutorialspoint", "type": "article", "url": "https://www.tutorialspoint.com/cprogramming/c_pointers.htm"}
+    ],
+    "memory management": [
+      {"title": "Memory Management in C - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/dynamic-memory-allocation-in-c-using-malloc-calloc-free-and-realloc/"},
+      {"title": "Understanding Memory Allocation - freeCodeCamp", "type": "article", "url": "https://www.freecodecamp.org/news/understand-your-programs-memory-92b-fe5c17c44fb0/"},
+      {"title": "Memory Management - Operating Systems (Neso Academy YouTube)", "type": "video", "url": "https://www.youtube.com/watch?v=9GDX-IyZ_C8"},
+      {"title": "Valgrind User Manual - Memory Debugging Tool", "type": "documentation", "url": "https://valgrind.org/docs/manual/manual.html"}
+    ],
+    "object oriented programming": [
+      {"title": "Object Oriented Programming - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/"},
+      {"title": "OOP Concepts for Beginners - freeCodeCamp", "type": "article", "url": "https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/"},
+      {"title": "Object-Oriented Programming in Python - Real Python", "type": "documentation", "url": "https://realpython.com/python3-object-oriented-programming/"},
+      {"title": "OOP in 7 minutes - Programming with Mosh (YouTube)", "type": "video", "url": "https://www.youtube.com/watch?v=pTB0EiLXUC8"}
+    ],
+    "stacks and queues": [
+      {"title": "Stack Data Structure - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/stack-data-structure/"},
+      {"title": "Queue Data Structure - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/queue-data-structure/"},
+      {"title": "Stacks and Queues - CS50 Harvard", "type": "course", "url": "https://cs50.harvard.edu/x/2024/"},
+      {"title": "Stack and Queue Visualizer - visualgo.net", "type": "practice", "url": "https://visualgo.net/en/list"}
+    ],
+    "graphs": [
+      {"title": "Graph Data Structure - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/"},
+      {"title": "Graph Algorithms for Technical Interviews - freeCodeCamp (YouTube)", "type": "video", "url": "https://www.youtube.com/watch?v=tWVWeAqZ0WU"},
+      {"title": "Graph Visualizer - visualgo.net", "type": "practice", "url": "https://visualgo.net/en/graphds"},
+      {"title": "MIT 6.006 Graph Search - OpenCourseWare", "type": "course", "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"}
+    ],
+    "hashing": [
+      {"title": "Hashing Data Structure - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/hashing-data-structure/"},
+      {"title": "Hash Tables Explained - Vaidehi Joshi (BaseCS Medium)", "type": "article", "url": "https://medium.com/basecs/taking-hash-tables-off-the-shelf-139cbf4752f0"},
+      {"title": "Hash Tables - CS50 Harvard", "type": "course", "url": "https://cs50.harvard.edu/x/2024/"},
+      {"title": "LeetCode Hash Table Problems", "type": "practice", "url": "https://leetcode.com/tag/hash-table/"}
+    ],
+    "binary search": [
+      {"title": "Binary Search - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/binary-search/"},
+      {"title": "Binary Search - Khan Academy", "type": "course", "url": "https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search"},
+      {"title": "Binary Search Patterns - LeetCode", "type": "practice", "url": "https://leetcode.com/tag/binary-search/"},
+      {"title": "Binary Search in 4 minutes - Michael Sambol (YouTube)", "type": "video", "url": "https://www.youtube.com/watch?v=fDKIpRe8GW4"}
+    ],
+    "sql joins": [
+      {"title": "SQL Joins - W3Schools", "type": "documentation", "url": "https://www.w3schools.com/sql/sql_join.asp"},
+      {"title": "Visual Explanation of SQL Joins - C.L. Moffatt", "type": "article", "url": "https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins"},
+      {"title": "SQL Tutorial - Mode Analytics", "type": "course", "url": "https://mode.com/sql-tutorial/"},
+      {"title": "SQL Practice - SQLZoo", "type": "practice", "url": "https://sqlzoo.net/wiki/SQL_Tutorial"}
+    ],
+    "process scheduling": [
+      {"title": "CPU Scheduling Algorithms - GeeksforGeeks", "type": "article", "url": "https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/"},
+      {"title": "Operating Systems: CPU Scheduling - Neso Academy (YouTube)", "type": "video", "url": "https://www.youtube.com/watch?v=EWkQl0n0w5M"},
+      {"title": "OS Process Scheduling - Tutorialspoint", "type": "article", "url": "https://www.tutorialspoint.com/operating_system/os_process_scheduling.htm"},
+      {"title": "Operating Systems: Three Easy Pieces (free textbook)", "type": "documentation", "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/"}
+    ],
+    "default": [
+      {"title": "MIT OpenCourseWare - Introduction to Computer Science and Programming", "type": "course", "url": "https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/"},
+      {"title": "GeeksforGeeks - CS Fundamentals", "type": "article", "url": "https://www.geeksforgeeks.org/computer-science-fundamentals/"},
+      {"title": "Khan Academy - Computing", "type": "course", "url": "https://www.khanacademy.org/computing"},
+      {"title": "freeCodeCamp - Full Curriculum", "type": "course", "url": "https://www.freecodecamp.org/"},
+      {"title": "LeetCode - Coding Practice", "type": "practice", "url": "https://leetcode.com/"}
+    ]
+  }
+}

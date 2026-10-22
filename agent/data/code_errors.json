@@ -1,0 +1,143 @@
+{
+  "patterns": [
+    {
+      "keywords": ["null pointer", "nullpointerexception", "nullptr", "none type", "nonetype has no attribute", "attributeerror: 'nonetype'"],
+      "language": "any",
+      "steps": [
+        {"n": 1, "step": "Identify the variable that is null or None by reading the error message and finding the line number."},
+        {"n": 2, "step": "Trace back to where that variable is assigned — check if it was never initialized, or if a function returned None/null unexpectedly."},
+        {"n": 3, "step": "Add a null/None check before using the variable: if (obj != null) { ... } in Java/C, or if obj is not None: ... in Python."},
+        {"n": 4, "step": "If the variable comes from a function call (e.g., database query, file read), handle the case where it may return null by providing a default value or early return."},
+        {"n": 5, "step": "Consider using Optional (Java) or the walrus operator with a default (Python) to make the null case explicit and force callers to handle it."}
+      ]
+    },
+    {
+      "keywords": ["index out of bounds", "indexerror", "arrayindexoutofboundsexception", "list index out of range", "out of range"],
+      "language": "any",
+      "steps": [
+        {"n": 1, "step": "Find the line number in the error message and identify which array, list, or string is being accessed."},
+        {"n": 2, "step": "Print or log the length of the array/list and the index you are trying to access just before the failing line."},
+        {"n": 3, "step": "Check that your loop bounds are correct — a common mistake is using <= instead of < when the upper bound is the length."},
+        {"n": 4, "step": "If the index is computed dynamically (e.g., from user input or an algorithm), add a bounds check: if 0 <= index < len(arr): ... ."},
+        {"n": 5, "step": "Watch for off-by-one errors in loops: arrays are 0-indexed in most languages, so valid indices are 0 through length-1, not 1 through length."}
+      ]
+    },
+    {
+      "keywords": ["stack overflow", "recursionerror", "maximum recursion depth exceeded", "stackoverflow"],
+      "language": "any",
+      "steps": [
+        {"n": 1, "step": "Confirm the error is caused by infinite or excessively deep recursion by looking at the stack trace — it will show the same function repeated many times."},
+        {"n": 2, "step": "Check your recursive function for a missing or incorrect base case — the function must have a condition under which it returns without calling itself."},
+        {"n": 3, "step": "Verify that every recursive call is progressing toward the base case (e.g., the input is getting smaller each time)."},
+        {"n": 4, "step": "If the recursion depth is genuinely large (e.g., processing a deep tree), refactor the algorithm to use an explicit stack (iterative DFS) instead of the call stack."},
+        {"n": 5, "step": "In Python you can inspect the current limit with sys.getrecursionlimit() and increase it with sys.setrecursionlimit(n), but this treats the symptom — fix the base case first."}
+      ]
+    },
+    {
+      "keywords": ["segmentation fault", "segfault", "access violation", "sigsegv", "memory access violation"],
+      "language": "c/c++",
+      "steps": [
+        {"n": 1, "step": "Compile with debug symbols (-g flag) and run the program under a debugger (gdb or lldb) to get the exact line and variable causing the fault."},
+        {"n": 2, "step": "Check for null or uninitialized pointer dereference — always initialize pointers and check for NULL before dereferencing."},
+        {"n": 3, "step": "Check for array out-of-bounds access — ensure loop indices stay within the allocated size."},
+        {"n": 4, "step": "Look for use-after-free bugs — do not access a pointer after calling free() on it; set it to NULL after freeing."},
+        {"n": 5, "step": "Run the program with Valgrind (valgrind --leak-check=full ./program) or AddressSanitizer (-fsanitize=address) to detect memory errors automatically."}
+      ]
+    },
+    {
+      "keywords": ["type error", "typeerror", "cannot convert", "incompatible types", "invalid operand types"],
+      "language": "any",
+      "steps": [
+        {"n": 1, "step": "Read the error message — it usually tells you exactly which types are involved and what operation was attempted (e.g., 'unsupported operand type(s) for +: int and str')."},
+        {"n": 2, "step": "Use print(type(variable)) in Python or check types with instanceof / typeof in Java/JavaScript to confirm the actual runtime type of the variable."},
+        {"n": 3, "step": "Check if the variable comes from external input (user input, file, API) — such data is often a string that needs to be converted: int(value), float(value), etc."},
+        {"n": 4, "step": "Look for implicit type coercion in mixed-type expressions — in Python 3, dividing two integers with / gives a float; use // for integer division."},
+        {"n": 5, "step": "Add explicit type annotations (Python type hints, Java generics) to catch type mismatches earlier during development."}
+      ]
+    },
+    {
+      "keywords": ["syntax error", "syntaxerror", "unexpected token", "invalid syntax", "parse error", "expected expression"],
+      "language": "any",
+      "steps": [
+        {"n": 1, "step": "Read the error message — the line number and a caret (^) usually point to the exact location of the syntax error."},
+        {"n": 2, "step": "Check the line indicated AND the line immediately before it — syntax errors often result from a missing closing bracket, parenthesis, or colon on the previous line."},
+        {"n": 3, "step": "Verify that all opening brackets, parentheses, and braces have a matching closing character — use your editor's bracket matching feature."},
+        {"n": 4, "step": "In Python, check for mixed tabs and spaces in indentation — use only spaces (4 per level) or only tabs, never both."},
+        {"n": 5, "step": "Copy the error into a search engine — syntax errors have distinctive messages that are well-documented with examples and fixes."}
+      ]
+    },
+    {
+      "keywords": ["import error", "importerror", "modulenotfounderror", "no module named", "cannot find module", "module not found"],
+      "language": "any",
+      "steps": [
+        {"n": 1, "step": "Confirm the exact module name in the error message and check your import statement for typos — module names are case-sensitive."},
+        {"n": 2, "step": "Verify the package is installed: run pip show <package-name> (Python) or npm list <package> (Node.js); if it is not installed, run pip install <package> or npm install <package>."},
+        {"n": 3, "step": "Check that you are running your code in the correct virtual environment — the package may be installed in a different environment."},
+        {"n": 4, "step": "If you are importing your own module, confirm the file exists at the expected path relative to the script and that the directory contains an __init__.py (for Python packages)."},
+        {"n": 5, "step": "Check sys.path in Python (import sys; print(sys.path)) to see the directories Python searches for modules — add the correct path if needed."}
+      ]
+    },
+    {
+      "keywords": ["undefined variable", "nameerror", "referenceerror", "is not defined", "variable not declared", "undeclared variable"],
+      "language": "any",
+      "steps": [
+        {"n": 1, "step": "Find the variable name in the error message and search for where it is (or should be) defined in your code."},
+        {"n": 2, "step": "Check for typos in the variable name — 'username' and 'userName' are different variables in most languages."},
+        {"n": 3, "step": "Verify the variable is defined before it is used — in Python, execution is sequential, so using a variable before its assignment raises NameError."},
+        {"n": 4, "step": "Check variable scope — a variable defined inside a function (local scope) is not accessible outside it; if you need it outside, return it or define it at the broader scope."},
+        {"n": 5, "step": "In JavaScript, check whether you used var, let, or const — var has function scope while let/const have block scope; using a variable outside its block raises ReferenceError."}
+      ]
+    },
+    {
+      "keywords": ["infinite loop", "program not terminating", "hangs forever", "loops indefinitely", "cpu at 100%", "not responding"],
+      "language": "any",
+      "steps": [
+        {"n": 1, "step": "Interrupt the program (Ctrl+C or kill the process) and add print statements inside the loop to trace the loop variable and termination condition on each iteration."},
+        {"n": 2, "step": "Check that the loop's termination condition can actually become true — for example, a while loop where the counter is never incremented will run forever."},
+        {"n": 3, "step": "Verify that variables modified inside the loop are the same ones checked in the condition — a common bug is modifying a copy rather than the original."},
+        {"n": 4, "step": "For recursive algorithms, check that the recursive call reduces the problem toward the base case — a non-reducing call leads to infinite recursion."},
+        {"n": 5, "step": "Consider adding a safety counter (iteration_limit = 10000; if count > iteration_limit: break) during debugging to prevent the program from hanging."}
+      ]
+    },
+    {
+      "keywords": ["off by one", "off-by-one", "fencepost error", "loop runs one too many", "loop runs one too few", "wrong count"],
+      "language": "any",
+      "steps": [
+        {"n": 1, "step": "Trace the loop manually with a small example (e.g., array of 3 elements) and verify the first and last iterations hit the correct indices."},
+        {"n": 2, "step": "Check whether your loop condition uses < or <= — for a zero-indexed array of length n, the correct condition is i < n, not i <= n (which would access index n, out of bounds)."},
+        {"n": 3, "step": "When iterating a range that represents a count (e.g., 'do this 5 times'), use range(5) in Python or i=0; i<5 in C/Java, which gives indices 0,1,2,3,4."},
+        {"n": 4, "step": "When computing mid in binary search or divide-and-conquer, prefer mid = low + (high - low) // 2 to avoid overflow and ensure consistent rounding."},
+        {"n": 5, "step": "Add an assertion after the loop that checks the final state (e.g., assert result_count == expected_count) to catch off-by-one errors automatically during testing."}
+      ]
+    },
+    {
+      "keywords": ["memory leak", "heap grows", "out of memory", "oom", "gc overhead limit exceeded", "memory keeps increasing"],
+      "language": "any",
+      "steps": [
+        {"n": 1, "step": "Profile memory usage with a tool: Valgrind for C/C++, memory_profiler or tracemalloc for Python, VisualVM for Java. Identify which objects are growing without bound."},
+        {"n": 2, "step": "Look for long-lived data structures (global lists, caches, event listener registries) that accumulate references without removing old ones."},
+        {"n": 3, "step": "In C/C++, ensure every malloc/new is paired with a free/delete, especially on error paths. Use smart pointers (unique_ptr, shared_ptr) to automate this."},
+        {"n": 4, "step": "In Python, check for reference cycles or lingering references in closures, class attributes, or global variables. Use gc.collect() and gc.get_objects() to inspect."},
+        {"n": 5, "step": "In Java/Python, remove event listeners, close file handles and database connections, and clear caches with a size limit (e.g., LRU cache) to prevent unbounded growth."}
+      ]
+    },
+    {
+      "keywords": ["division by zero", "zerodivisionerror", "dividebyzeroexception", "divide by zero", "divided by zero", "division error"],
+      "language": "any",
+      "steps": [
+        {"n": 1, "step": "Find the division operation in the error's line number and identify the divisor variable."},
+        {"n": 2, "step": "Add a guard condition before the division: if denominator != 0: result = numerator / denominator else: handle_zero_case()."},
+        {"n": 3, "step": "Trace back to where the divisor is set — check if it can be zero due to a calculation result, empty list length, or uninitialized value."},
+        {"n": 4, "step": "If the denominator is user-supplied or computed from data, validate it with an assert or raise a descriptive ValueError before the division."},
+        {"n": 5, "step": "For floating-point code, also guard against very small values (near-zero) that can cause numerical instability even if not exactly zero."}
+      ]
+    }
+  ],
+  "default_steps": [
+    {"n": 1, "step": "Read the full error message carefully — it usually states the error type, the file name, and the line number where the error occurred."},
+    {"n": 2, "step": "Navigate to the indicated line number in your editor and read the surrounding 5-10 lines for context."},
+    {"n": 3, "step": "Add print/log statements around the failing code to trace the values of variables just before the error occurs."},
+    {"n": 4, "step": "Search for the exact error message (in quotes) in a search engine — most common errors have well-known solutions documented on Stack Overflow and official documentation."},
+    {"n": 5, "step": "Reproduce the error with a minimal example — strip your code down to the smallest program that still triggers the bug. This often reveals the root cause and makes it easier to ask for help."}
+  ]
+}

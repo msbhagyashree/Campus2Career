@@ -1,0 +1,227 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create synthetic data files in agent/data/ for deterministic tool output": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674226252
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674232991
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792675233647
+      }
+    ],
+    "1.2 Add test support module with an enhanced fake decider and hypothesis strategies": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674226525
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674236736
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792675237754
+      }
+    ],
+    "2.1 Implement the six `@tool` functions, the TOOLS list, and shared data-loading helpers": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674226722
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792675242013
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792675473939
+      }
+    ],
+    "3. Checkpoint - tools pass": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674226885
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678349961
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678444935
+      }
+    ],
+    "4.1 Implement agent/decision.py: tag, questions, Selection, and Tool_Selector": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674227036
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792675478622
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792676020304
+      }
+    ],
+    "5. Checkpoint - decision pattern passes": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674227215
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678449131
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678479974
+      }
+    ],
+    "6.1 Implement agent/agent.py: constants, chat, sessions, and image plumbing": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674227395
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792676049233
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678237551
+      }
+    ],
+    "7. Checkpoint - agent passes": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674227533
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678484767
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678490085
+      }
+    ],
+    "8.1 Create agent/eval_cases.jsonl with 60 labelled cases (48 tune / 12 test)": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674227712
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678244119
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678261497
+      }
+    ],
+    "8.4 Create agent/demo_script.yaml and agent/features.yaml": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674227860
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678274813
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678345100
+      }
+    ],
+    "10. Final checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792674227999
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678494964
+      },
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678632537
+      }
+    ],
+    "1. Set up synthetic data and test infrastructure": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792675237852
+      }
+    ],
+    "2. Implement the six study tools (agent/tools.py)": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792675474049
+      }
+    ],
+    "4. Implement the reusable decision pattern (agent/decision.py)": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792676020595
+      }
+    ],
+    "6. Implement the HackathonAgent (agent/agent.py)": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678237858
+      }
+    ],
+    "8. Create evaluation cases and supporting config": [
+      {
+        "executionId": "a8a12892-5fc5-493d-8b02-ac4cfb932670",
+        "chatSessionId": "sess_ea9427eb-df15-495b-9afc-286ea2fb20ce",
+        "timestamp": 1792678345212
+      }
+    ]
+  }
+}

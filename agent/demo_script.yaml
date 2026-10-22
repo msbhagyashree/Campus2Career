@@ -1,0 +1,30 @@
+# Campus2Career demo script — what the video shows.
+# Each turn is typed into the demo UI against the real agent.
+# `narrate` describes what is happening; make_video.py appends what the decider decided,
+# so the narration never claims something that did not happen. Keep it under ~2.5 minutes.
+title: "Campus2Career: an AI tutor that picks the right study tool for every question"
+pitch: "An AI exam-prep tutor for college students that selects the right study tool for every request using Strands Decider 2B."
+features:
+  - "explain technical concepts in plain language with definitions"
+  - "create prioritized study plans for upcoming exams"
+  - "generate practice questions in quiz, MCQ and mock-test formats"
+  - "debug code errors with numbered step-by-step fixes"
+  - "recommend tutorials, docs and courses by topic"
+  - "provide aptitude and communication practice exercises"
+  - "ask students to clarify when the request is ambiguous"
+  - "run on Amazon Bedrock AgentCore Runtime"
+eager: false
+intro: "Campus2Career is an AI exam-prep tutor that runs on Amazon Bedrock. Strands Decider 2B reads each student request and selects the right study tool — concept explanation, exam planning, practice questions, code debugging, resources, or aptitude coaching — before the LLM responds."
+intro_normal: "Campus2Career runs on Amazon Bedrock AgentCore Runtime. Strands Decider 2B picks the right study tool for every request in one forward pass, before Amazon Nova Pro answers."
+turns:
+  - say: "Explain what recursion is — I keep getting confused."
+    narrate: "A clear concept question. The decider should select the concept_explainer tool."
+  - say: "I have my Data Structures exam in 4 days and only 2 hours each evening. Help me plan."
+    narrate: "The student gives the subject, timeline and available time. The decider selects exam_planner."
+  - say: "Give me 5 MCQ practice questions on binary trees."
+    narrate: "An explicit practice request with format and topic. The decider selects practice_generator."
+  - say: "I uploaded a screenshot of my C++ error. Can you help me fix it?"
+    narrate: "A code debug request with a screenshot. The vision-capable decider factors in the image and selects code_debugger."
+  - say: "Just help me study."
+    narrate: "An ambiguous request — the decider is unsure. The agent asks the student to clarify."
+outro: "One forward pass per decision, calibrated confidence the code can branch on, and Amazon Bedrock for the conversation. Built with the AWS User Group Madurai Strands Decider hackathon kit."

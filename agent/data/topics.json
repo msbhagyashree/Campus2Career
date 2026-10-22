@@ -1,0 +1,172 @@
+{
+  "topics": {
+    "recursion": {
+      "explanation": "Recursion is a programming technique where a function solves a problem by calling itself with a simpler version of the same problem. Each call works on a smaller piece until it hits a stopping condition called the base case. Think of it like a set of Russian nesting dolls — you keep opening each doll until you find the smallest one inside, then you work your way back out. For example, computing the factorial of 5 means multiplying 5 × (factorial of 4), which means 4 × (factorial of 3), all the way down to factorial of 1, which is just 1. Once we hit that base case, each call returns its result back up the chain.",
+      "terms": {
+        "recursion": "A function that calls itself to solve a smaller version of the same problem.",
+        "base case": "The stopping condition in a recursive function — the simplest input for which the function returns an answer directly without making another recursive call.",
+        "call stack": "A region of memory that tracks all active function calls. Each recursive call adds a new frame to the stack; when the function returns, its frame is removed.",
+        "recursive case": "The part of the function that reduces the problem and calls itself again.",
+        "stack overflow": "An error that occurs when recursion goes too deep and exceeds the call stack's memory limit."
+      }
+    },
+    "binary trees": {
+      "explanation": "A binary tree is a data structure where every node can have at most two children, typically called the left child and the right child. The topmost node is the root. Nodes with no children are called leaves. Binary trees are used to model hierarchical data, enable efficient searching (as in binary search trees), and implement expression parsing. To process all nodes, you can traverse the tree in different orders: in-order (left, root, right), pre-order (root, left, right), or post-order (left, right, root). A balanced binary tree keeps its height at O(log n), making operations fast.",
+      "terms": {
+        "node": "A single element of the tree that holds a value and references to its children.",
+        "root": "The topmost node of the tree, which has no parent.",
+        "leaf": "A node with no children.",
+        "height": "The number of edges on the longest path from the root to a leaf.",
+        "traversal": "The process of visiting every node in the tree in a defined order.",
+        "binary search tree": "A binary tree where the left child is always less than the parent and the right child is always greater, enabling O(log n) search."
+      }
+    },
+    "linked lists": {
+      "explanation": "A linked list is a linear data structure where each element (called a node) stores a value and a pointer to the next node in the sequence. Unlike arrays, linked list nodes are not stored in contiguous memory — they are scattered in memory and connected through pointers. This makes insertion and deletion at any position very efficient (O(1) once you have the reference), but random access is slow (O(n)) because you must follow pointers from the head. There are singly linked lists (one pointer per node), doubly linked lists (forward and backward pointers), and circular linked lists (last node points back to the head).",
+      "terms": {
+        "node": "A unit in a linked list that holds data and a pointer to the next node.",
+        "head": "The first node in a linked list.",
+        "tail": "The last node in a linked list, whose next pointer is null.",
+        "pointer": "A variable that stores the memory address of another variable or node.",
+        "singly linked list": "A linked list where each node has only one pointer, pointing to the next node.",
+        "doubly linked list": "A linked list where each node has two pointers: one to the next node and one to the previous node."
+      }
+    },
+    "sorting algorithms": {
+      "explanation": "Sorting algorithms arrange elements in a list into a defined order, typically ascending or descending. Different algorithms trade off time complexity, space complexity, and stability (whether equal elements preserve their relative order). Bubble sort repeatedly swaps adjacent elements that are out of order — simple but slow at O(n²). Merge sort divides the list in half, sorts each half recursively, then merges them — efficient at O(n log n) but needs extra memory. Quick sort picks a pivot and partitions elements around it — fast in practice (average O(n log n)) but O(n²) in the worst case. For nearly sorted data, insertion sort's O(n) best case shines.",
+      "terms": {
+        "time complexity": "A measure of how the running time of an algorithm grows with the size of the input.",
+        "stable sort": "A sort that preserves the relative order of equal elements.",
+        "in-place sort": "A sort that rearranges elements using only a constant amount of extra memory.",
+        "pivot": "In quick sort, the element chosen to partition the array into smaller and larger halves.",
+        "merge": "Combining two sorted sequences into one sorted sequence.",
+        "comparison sort": "A sort that determines order by comparing pairs of elements."
+      }
+    },
+    "dynamic programming": {
+      "explanation": "Dynamic programming (DP) is an optimization technique for problems that can be broken into overlapping sub-problems. Instead of solving the same sub-problem repeatedly, DP stores each result in a table (memoization for top-down, tabulation for bottom-up) and looks it up when needed. The classic example is computing Fibonacci numbers: a naive recursive approach recomputes fib(3) dozens of times, but DP stores it once. DP requires the problem to have two properties: optimal substructure (the optimal solution to the whole problem contains optimal solutions to sub-problems) and overlapping sub-problems (the same sub-problems are solved multiple times). Common DP problems include the 0/1 knapsack, longest common subsequence, and shortest path.",
+      "terms": {
+        "memoization": "A top-down DP technique that stores the result of each function call the first time it is computed, so future calls can return the cached result.",
+        "tabulation": "A bottom-up DP technique that fills a table iteratively from the smallest sub-problems to the full problem.",
+        "optimal substructure": "A property where the optimal solution to a problem can be built from optimal solutions to its sub-problems.",
+        "overlapping sub-problems": "A property where the same sub-problems recur many times within the recursion tree.",
+        "state": "The set of parameters that uniquely identify a sub-problem in a DP solution.",
+        "transition": "The recurrence relation that expresses a larger sub-problem's solution in terms of smaller sub-problems."
+      }
+    },
+    "big o notation": {
+      "explanation": "Big O notation is a mathematical way to describe how the running time or space usage of an algorithm scales with the size of the input (n). It captures the worst-case growth rate, ignoring constant factors and lower-order terms. O(1) is constant time — the operation takes the same time regardless of n (e.g., accessing an array by index). O(log n) is logarithmic — common in binary search. O(n) is linear — you visit each element once. O(n log n) is typical for efficient sorting. O(n²) is quadratic — common in nested loops. O(2ⁿ) is exponential — very slow, seen in brute-force solutions. Understanding Big O helps you choose the right algorithm for large inputs.",
+      "terms": {
+        "Big O": "An upper bound on the growth rate of an algorithm's resource usage in the worst case.",
+        "time complexity": "How the running time of an algorithm grows with input size.",
+        "space complexity": "How the memory usage of an algorithm grows with input size.",
+        "O(1)": "Constant time — independent of input size.",
+        "O(n)": "Linear time — grows proportionally with input size.",
+        "O(n²)": "Quadratic time — grows with the square of input size, typical for nested loops.",
+        "amortized analysis": "A technique that averages the cost of operations over a sequence to give a more accurate per-operation cost."
+      }
+    },
+    "pointers": {
+      "explanation": "A pointer is a variable that stores the memory address of another variable rather than a value directly. Pointers are fundamental in low-level languages like C and C++. Instead of copying data around, you pass a pointer to the data — this is more memory-efficient and allows functions to modify the original variable. Dereferencing a pointer means accessing the value at the address it stores (using the * operator in C). Pointer arithmetic lets you move through arrays by incrementing the address. Improper use of pointers — such as dereferencing a null pointer or a dangling pointer — causes crashes and security vulnerabilities, which is why higher-level languages hide pointers behind references and garbage collection.",
+      "terms": {
+        "pointer": "A variable that stores the memory address of another variable.",
+        "dereferencing": "Accessing the value stored at the address a pointer holds.",
+        "null pointer": "A pointer that does not point to any valid memory location (address 0 or NULL).",
+        "dangling pointer": "A pointer that points to memory that has already been freed.",
+        "pointer arithmetic": "Incrementing or decrementing a pointer to navigate through contiguous memory (e.g., array elements).",
+        "reference": "A safe alias for a variable that behaves like a pointer but cannot be null or reseated (used in C++, Java, Python)."
+      }
+    },
+    "memory management": {
+      "explanation": "Memory management is the process of allocating and releasing computer memory so programs can store data. Every program uses two main memory regions: the stack (for local variables and function call frames — managed automatically) and the heap (for dynamically allocated memory — managed explicitly or by a garbage collector). In C/C++, you call malloc/new to allocate heap memory and free/delete to release it. Forgetting to free memory causes a memory leak — the program uses more and more memory over time. Double-freeing or using freed memory causes undefined behavior. Modern languages like Python, Java, and Go use automatic garbage collection to track objects and free memory that is no longer reachable.",
+      "terms": {
+        "stack": "A region of memory for local variables and function frames, managed automatically by the call stack.",
+        "heap": "A region of memory for dynamic allocations that persist beyond a function call.",
+        "memory leak": "A bug where allocated heap memory is never freed, causing the program's memory usage to grow indefinitely.",
+        "garbage collection": "An automatic memory management technique that identifies and frees memory that is no longer reachable by the program.",
+        "malloc": "A C standard library function that allocates a specified number of bytes on the heap and returns a pointer.",
+        "free": "A C standard library function that releases heap memory previously allocated by malloc."
+      }
+    },
+    "object oriented programming": {
+      "explanation": "Object-oriented programming (OOP) is a programming paradigm that organizes code around objects — self-contained units that combine data (attributes) and behavior (methods). A class is a blueprint that defines the attributes and methods an object will have; an object is a specific instance of that class. OOP is built on four core principles: Encapsulation (hiding internal state behind a public interface), Inheritance (a subclass inheriting attributes and methods from a parent class), Polymorphism (different classes responding to the same method call in different ways), and Abstraction (exposing only what is necessary and hiding complexity). OOP makes large codebases easier to reason about and extend.",
+      "terms": {
+        "class": "A blueprint or template that defines the structure and behavior of objects.",
+        "object": "An instance of a class that holds specific data and can call the class's methods.",
+        "encapsulation": "Bundling data and methods together and restricting direct access to internal state.",
+        "inheritance": "A mechanism where a subclass inherits attributes and methods from its parent class.",
+        "polymorphism": "The ability of different classes to be used interchangeably through a common interface.",
+        "abstraction": "Hiding implementation details and exposing only a simplified interface."
+      }
+    },
+    "stacks and queues": {
+      "explanation": "A stack and a queue are two fundamental abstract data types that differ in the order in which elements are removed. A stack follows LIFO (Last-In, First-Out): the most recently added element is the first to be removed — like a stack of plates. Operations are push (add to top) and pop (remove from top). Stacks are used for function call management, expression evaluation, and undo operations. A queue follows FIFO (First-In, First-Out): the first element added is the first to be removed — like a line at a ticket counter. Operations are enqueue (add to back) and dequeue (remove from front). Queues are used in scheduling, breadth-first search, and buffering.",
+      "terms": {
+        "LIFO": "Last-In, First-Out — the order in which a stack processes elements.",
+        "FIFO": "First-In, First-Out — the order in which a queue processes elements.",
+        "push": "The operation of adding an element to the top of a stack.",
+        "pop": "The operation of removing the top element from a stack.",
+        "enqueue": "The operation of adding an element to the back of a queue.",
+        "dequeue": "The operation of removing the front element from a queue.",
+        "priority queue": "A queue where each element has a priority and higher-priority elements are dequeued first."
+      }
+    },
+    "graphs": {
+      "explanation": "A graph is a data structure consisting of a set of vertices (also called nodes) connected by edges. Unlike trees, graphs can have cycles and edges going in any direction. A directed graph (digraph) has edges with a direction (A → B); an undirected graph has edges with no direction (A — B). Graphs are used to model networks: social connections, road maps, web pages, and dependency graphs. Common algorithms on graphs include depth-first search (DFS) — which explores as far as possible along each branch before backtracking — and breadth-first search (BFS) — which explores all neighbors level by level. Dijkstra's algorithm finds the shortest path between two vertices in a weighted graph.",
+      "terms": {
+        "vertex": "A node in a graph.",
+        "edge": "A connection between two vertices in a graph.",
+        "directed graph": "A graph where each edge has a direction.",
+        "undirected graph": "A graph where edges have no direction.",
+        "adjacency list": "A way of representing a graph as a list of neighbors for each vertex.",
+        "adjacency matrix": "A 2D array representation of a graph where matrix[i][j] = 1 if there is an edge from vertex i to vertex j.",
+        "cycle": "A path in a graph that starts and ends at the same vertex."
+      }
+    },
+    "hashing": {
+      "explanation": "Hashing is the process of mapping data (a key) to a fixed-size integer (a hash code) using a hash function. Hash tables use this hash code to determine where to store a value in an array, enabling O(1) average-time lookups, insertions, and deletions. The challenge with hash tables is collisions — when two different keys produce the same hash code. Collision resolution strategies include chaining (storing a linked list of colliding entries at each slot) and open addressing (probing adjacent slots until an empty one is found). Python's dict and Java's HashMap are built on hash tables. Cryptographic hash functions (like SHA-256) are a specialized form used for data integrity and passwords, designed to be collision-resistant and one-way.",
+      "terms": {
+        "hash function": "A function that maps a key to an integer index in a fixed-size array.",
+        "hash code": "The integer value produced by a hash function for a given key.",
+        "collision": "A situation where two different keys produce the same hash code.",
+        "chaining": "A collision resolution technique that stores all colliding entries as a linked list at each hash table slot.",
+        "open addressing": "A collision resolution technique where colliding elements are placed in the next available slot.",
+        "load factor": "The ratio of the number of entries to the total number of slots in a hash table; a high load factor leads to more collisions."
+      }
+    },
+    "binary search": {
+      "explanation": "Binary search is an efficient algorithm for finding an element in a sorted array. Instead of checking every element from left to right (linear search, O(n)), binary search repeatedly halves the search space. It starts at the middle element: if that element equals the target, it is found; if the target is smaller, search the left half; if larger, search the right half. Each comparison eliminates half the remaining elements, giving a time complexity of O(log n). Binary search requires the array to be sorted beforehand. It is used in databases for index lookups, in version control for git bisect, and as the foundation of many divide-and-conquer algorithms.",
+      "terms": {
+        "sorted array": "A prerequisite for binary search — the elements must be in ascending (or descending) order.",
+        "mid index": "The index of the middle element computed as (low + high) / 2 in each iteration.",
+        "search space": "The range of indices still under consideration; binary search halves it with each comparison.",
+        "O(log n)": "Logarithmic time complexity — the running time grows by one step each time n doubles.",
+        "lower bound": "The first position where a value could be inserted to maintain sorted order.",
+        "upper bound": "The last position where a value could be inserted to maintain sorted order."
+      }
+    },
+    "sql joins": {
+      "explanation": "SQL joins combine rows from two or more tables based on a related column. An INNER JOIN returns only the rows that have matching values in both tables. A LEFT JOIN (or LEFT OUTER JOIN) returns all rows from the left table plus matching rows from the right table; if there is no match, NULL values are returned for the right table's columns. A RIGHT JOIN is the mirror image — all rows from the right table, plus matches from the left. A FULL OUTER JOIN returns all rows from both tables, with NULLs wherever there is no match. A CROSS JOIN returns the Cartesian product of both tables (every combination of rows). Joins are essential for working with normalized relational databases where data is split across multiple tables to reduce redundancy.",
+      "terms": {
+        "INNER JOIN": "Returns rows that have matching values in both joined tables.",
+        "LEFT JOIN": "Returns all rows from the left table and matching rows from the right; non-matching right rows are NULL.",
+        "RIGHT JOIN": "Returns all rows from the right table and matching rows from the left; non-matching left rows are NULL.",
+        "FULL OUTER JOIN": "Returns all rows from both tables, with NULLs for non-matching sides.",
+        "ON clause": "The condition that specifies how the tables are related, e.g., ON orders.customer_id = customers.id.",
+        "foreign key": "A column in one table that references the primary key of another table, forming the basis of a join."
+      }
+    },
+    "process scheduling": {
+      "explanation": "Process scheduling is how an operating system decides which process runs on the CPU at any given time. Since there are typically more processes than CPU cores, the OS scheduler multiplexes them. First-Come-First-Served (FCFS) runs processes in arrival order — simple but can cause long waits (convoy effect). Shortest Job First (SJF) minimizes average waiting time by running the shortest process next — optimal but requires knowing burst times in advance. Round Robin (RR) gives each process a fixed time slice (quantum) in rotation — fair and responsive. Priority scheduling runs higher-priority processes first, with preemption allowing the OS to interrupt a running process when a higher-priority one arrives. Multilevel feedback queues combine several strategies for production systems.",
+      "terms": {
+        "scheduler": "The OS component that decides which ready process gets CPU time next.",
+        "burst time": "The total CPU time a process needs to complete its execution.",
+        "waiting time": "The total time a process spends waiting in the ready queue.",
+        "turnaround time": "The total time from a process's arrival to its completion.",
+        "preemption": "The ability of the scheduler to interrupt a running process and switch to another.",
+        "time quantum": "The fixed time slice allocated to each process in Round Robin scheduling.",
+        "context switch": "The act of saving the state of the current process and loading the state of the next process."
+      }
+    }
+  }
+}

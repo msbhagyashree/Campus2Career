@@ -1,0 +1,100 @@
+{
+  "plans": {
+    "data structures": [
+      {"task": "Review arrays and their time complexities for access, insert, delete", "priority": 1, "topic": "arrays"},
+      {"task": "Study linked lists: singly, doubly, and circular variants", "priority": 2, "topic": "linked lists"},
+      {"task": "Practice stack and queue operations with code examples", "priority": 3, "topic": "stacks and queues"},
+      {"task": "Understand binary trees: traversals (in-order, pre-order, post-order)", "priority": 4, "topic": "binary trees"},
+      {"task": "Learn binary search trees: insertion, deletion, search", "priority": 5, "topic": "binary trees"},
+      {"task": "Study heaps: min-heap, max-heap, and heap operations", "priority": 6, "topic": "binary trees"},
+      {"task": "Understand hash tables: collision resolution, load factor", "priority": 7, "topic": "hashing"},
+      {"task": "Learn graph representations: adjacency list vs adjacency matrix", "priority": 8, "topic": "graphs"},
+      {"task": "Practice BFS and DFS implementations on graphs", "priority": 9, "topic": "graphs"},
+      {"task": "Solve 5 data structures problems on LeetCode or GeeksforGeeks", "priority": 10, "topic": "mixed"}
+    ],
+    "algorithms": [
+      {"task": "Review Big O notation and analyze the complexity of common algorithms", "priority": 1, "topic": "big o notation"},
+      {"task": "Study and implement bubble sort, insertion sort, and selection sort", "priority": 2, "topic": "sorting algorithms"},
+      {"task": "Implement merge sort and quick sort with detailed trace-through", "priority": 3, "topic": "sorting algorithms"},
+      {"task": "Practice binary search and its variants (lower bound, upper bound)", "priority": 4, "topic": "binary search"},
+      {"task": "Understand divide-and-conquer strategy with examples", "priority": 5, "topic": "sorting algorithms"},
+      {"task": "Study dynamic programming: memoization and tabulation approaches", "priority": 6, "topic": "dynamic programming"},
+      {"task": "Solve classic DP problems: Fibonacci, 0/1 knapsack, longest common subsequence", "priority": 7, "topic": "dynamic programming"},
+      {"task": "Learn graph algorithms: Dijkstra's shortest path, Bellman-Ford", "priority": 8, "topic": "graphs"},
+      {"task": "Study greedy algorithms and when they give optimal solutions", "priority": 9, "topic": "sorting algorithms"},
+      {"task": "Complete 10 algorithm problems spanning all topics", "priority": 10, "topic": "mixed"}
+    ],
+    "operating systems": [
+      {"task": "Study OS architecture: kernel, user space, system calls", "priority": 1, "topic": "memory management"},
+      {"task": "Learn process vs thread: differences, creation, and lifecycle", "priority": 2, "topic": "process scheduling"},
+      {"task": "Understand CPU scheduling algorithms: FCFS, SJF, Round Robin, Priority", "priority": 3, "topic": "process scheduling"},
+      {"task": "Calculate waiting time and turnaround time for scheduling examples", "priority": 4, "topic": "process scheduling"},
+      {"task": "Study deadlocks: conditions, prevention, detection, and recovery", "priority": 5, "topic": "process scheduling"},
+      {"task": "Understand memory management: paging, segmentation, and virtual memory", "priority": 6, "topic": "memory management"},
+      {"task": "Learn page replacement algorithms: FIFO, LRU, Optimal", "priority": 7, "topic": "memory management"},
+      {"task": "Study file systems: directory structures, inodes, and FAT", "priority": 8, "topic": "memory management"},
+      {"task": "Review inter-process communication: pipes, semaphores, message queues", "priority": 9, "topic": "process scheduling"},
+      {"task": "Practice past exam questions on OS scheduling and memory", "priority": 10, "topic": "process scheduling"}
+    ],
+    "database management": [
+      {"task": "Review relational model: tables, tuples, attributes, and keys", "priority": 1, "topic": "sql joins"},
+      {"task": "Study SQL: SELECT, WHERE, GROUP BY, HAVING, ORDER BY", "priority": 2, "topic": "sql joins"},
+      {"task": "Practice all types of SQL JOINs with example queries", "priority": 3, "topic": "sql joins"},
+      {"task": "Understand normalization: 1NF, 2NF, 3NF, and BCNF with examples", "priority": 4, "topic": "sql joins"},
+      {"task": "Study ER diagrams: entities, relationships, cardinality notation", "priority": 5, "topic": "sql joins"},
+      {"task": "Learn transaction management: ACID properties and isolation levels", "priority": 6, "topic": "sql joins"},
+      {"task": "Understand indexing: B-tree indexes, clustered vs non-clustered", "priority": 7, "topic": "hashing"},
+      {"task": "Study concurrency control: locking protocols and two-phase locking", "priority": 8, "topic": "sql joins"},
+      {"task": "Review relational algebra operations for query optimization", "priority": 9, "topic": "sql joins"},
+      {"task": "Solve 10 SQL query problems covering joins, aggregation, and subqueries", "priority": 10, "topic": "sql joins"}
+    ],
+    "computer networks": [
+      {"task": "Review the OSI model: all 7 layers, their functions, and protocols", "priority": 1, "topic": "object oriented programming"},
+      {"task": "Study the TCP/IP model and compare it to the OSI model", "priority": 2, "topic": "object oriented programming"},
+      {"task": "Learn IP addressing: IPv4, subnetting, CIDR notation, IPv6 basics", "priority": 3, "topic": "object oriented programming"},
+      {"task": "Understand TCP vs UDP: differences, three-way handshake, flow control", "priority": 4, "topic": "object oriented programming"},
+      {"task": "Study routing protocols: RIP, OSPF, and BGP at a conceptual level", "priority": 5, "topic": "graphs"},
+      {"task": "Learn HTTP/HTTPS, DNS, and DHCP operation in detail", "priority": 6, "topic": "object oriented programming"},
+      {"task": "Understand network security: firewalls, SSL/TLS, and common attacks", "priority": 7, "topic": "object oriented programming"},
+      {"task": "Practice subnetting calculations and VLSM problems", "priority": 8, "topic": "object oriented programming"},
+      {"task": "Review error detection and correction: CRC, Hamming codes", "priority": 9, "topic": "object oriented programming"},
+      {"task": "Solve past exam questions on networking layers and protocols", "priority": 10, "topic": "object oriented programming"}
+    ],
+    "programming fundamentals": [
+      {"task": "Review variables, data types, and operators in your primary language", "priority": 1, "topic": "object oriented programming"},
+      {"task": "Study control flow: if-else, loops (for, while, do-while), and switch", "priority": 2, "topic": "recursion"},
+      {"task": "Understand functions: parameters, return values, scope, and call stack", "priority": 3, "topic": "recursion"},
+      {"task": "Practice recursion: write recursive solutions for factorial, Fibonacci, and power", "priority": 4, "topic": "recursion"},
+      {"task": "Study arrays and strings: common operations and built-in methods", "priority": 5, "topic": "sorting algorithms"},
+      {"task": "Learn about pointers or references depending on your language", "priority": 6, "topic": "pointers"},
+      {"task": "Understand exception handling: try, catch, finally, and custom exceptions", "priority": 7, "topic": "object oriented programming"},
+      {"task": "Practice OOP: write classes with inheritance and polymorphism", "priority": 8, "topic": "object oriented programming"},
+      {"task": "Study file I/O: reading from and writing to files", "priority": 9, "topic": "memory management"},
+      {"task": "Solve 15 programming problems covering all fundamentals", "priority": 10, "topic": "mixed"}
+    ],
+    "mathematics": [
+      {"task": "Review sets, relations, and functions: definitions and properties", "priority": 1, "topic": "big o notation"},
+      {"task": "Study propositional logic: truth tables, logical equivalences", "priority": 2, "topic": "big o notation"},
+      {"task": "Learn number theory: divisibility, primes, GCD, LCM, modular arithmetic", "priority": 3, "topic": "big o notation"},
+      {"task": "Understand combinatorics: permutations, combinations, and the pigeonhole principle", "priority": 4, "topic": "big o notation"},
+      {"task": "Study graph theory: trees, paths, cycles, and Euler/Hamiltonian circuits", "priority": 5, "topic": "graphs"},
+      {"task": "Learn recurrence relations and their solutions", "priority": 6, "topic": "dynamic programming"},
+      {"task": "Study probability: Bayes' theorem, conditional probability, distributions", "priority": 7, "topic": "big o notation"},
+      {"task": "Review linear algebra: matrices, determinants, eigenvalues", "priority": 8, "topic": "big o notation"},
+      {"task": "Practice calculus: differentiation and integration basics", "priority": 9, "topic": "big o notation"},
+      {"task": "Solve 20 mathematics problems from previous university exam papers", "priority": 10, "topic": "mixed"}
+    ],
+    "digital electronics": [
+      {"task": "Review number systems: binary, octal, decimal, hexadecimal conversions", "priority": 1, "topic": "binary search"},
+      {"task": "Study Boolean algebra: laws, theorems, and simplification techniques", "priority": 2, "topic": "binary search"},
+      {"task": "Learn logic gates: AND, OR, NOT, NAND, NOR, XOR, XNOR with truth tables", "priority": 3, "topic": "binary search"},
+      {"task": "Practice Karnaugh map (K-map) simplification for 2, 3, and 4 variables", "priority": 4, "topic": "binary search"},
+      {"task": "Understand combinational circuits: adders, subtractors, multiplexers, decoders", "priority": 5, "topic": "binary search"},
+      {"task": "Study flip-flops: SR, D, JK, and T flip-flops with timing diagrams", "priority": 6, "topic": "binary search"},
+      {"task": "Learn sequential circuits: registers, counters, and state machines", "priority": 7, "topic": "binary search"},
+      {"task": "Understand memory devices: ROM, RAM, and cache hierarchy", "priority": 8, "topic": "memory management"},
+      {"task": "Study analog-to-digital and digital-to-analog conversion", "priority": 9, "topic": "binary search"},
+      {"task": "Solve past exam questions on Boolean simplification and circuit design", "priority": 10, "topic": "binary search"}
+    ]
+  }
+}

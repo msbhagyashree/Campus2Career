@@ -1,0 +1,60 @@
+{"state": "User request: Explain what recursion means in programming.", "expected": {"tool": "concept_explainer"}, "split": "tune"}
+{"state": "User request: What is object-oriented programming?", "expected": {"tool": "concept_explainer"}, "split": "tune"}
+{"state": "User request: Define polymorphism in simple terms.", "expected": {"tool": "concept_explainer"}, "split": "tune"}
+{"state": "User request: Explain binary search to me.", "expected": {"tool": "concept_explainer"}, "split": "tune"}
+{"state": "User request: What does encapsulation mean?", "expected": {"tool": "concept_explainer"}, "split": "tune"}
+{"state": "User request: Explain what a linked list is.", "expected": {"tool": "concept_explainer"}, "split": "tune"}
+{"state": "User request: What is the difference between a stack and a queue?", "expected": {"tool": "concept_explainer"}, "split": "tune"}
+{"state": "User request: Describe the concept of inheritance in OOP.", "expected": {"tool": "concept_explainer"}, "split": "tune"}
+{"state": "User request: I have a Data Structures exam in 5 days. Help me plan my study time.", "expected": {"tool": "exam_planner"}, "split": "tune"}
+{"state": "User request: My Python exam is on Friday. I have 3 hours a day. Build me a study schedule.", "expected": {"tool": "exam_planner"}, "split": "tune"}
+{"state": "User request: Create a study plan for my Algorithms midterm next week.", "expected": {"tool": "exam_planner"}, "split": "tune"}
+{"state": "User request: I need to prepare for my Database Systems final in 10 days with 2 hours daily.", "expected": {"tool": "exam_planner"}, "split": "tune"}
+{"state": "User request: Help me organize my study schedule for the Operating Systems exam.", "expected": {"tool": "exam_planner"}, "split": "tune"}
+{"state": "User request: Give me 5 practice questions on sorting algorithms.", "expected": {"tool": "practice_generator"}, "split": "tune"}
+{"state": "User request: I want 10 quiz questions on Python basics with answers.", "expected": {"tool": "practice_generator"}, "split": "tune"}
+{"state": "User request: Generate 3 MCQ questions on binary trees.", "expected": {"tool": "practice_generator"}, "split": "tune"}
+{"state": "User request: Create a mock test with 15 questions on SQL.", "expected": {"tool": "practice_generator"}, "split": "tune"}
+{"state": "User request: Give me practice problems on dynamic programming.", "expected": {"tool": "practice_generator"}, "split": "tune"}
+{"state": "User request: My Python code gives a NameError: name 'x' is not defined. What's wrong?", "expected": {"tool": "code_debugger"}, "split": "tune"}
+{"state": "User request: I'm getting an IndexError in my Python list. Here's the code: lst[5] on a list of 3 items.", "expected": {"tool": "code_debugger"}, "split": "tune"}
+{"state": "User request: TypeError: unsupported operand type(s) for +: 'int' and 'str'. Help me fix this.", "expected": {"tool": "code_debugger"}, "split": "tune"}
+{"state": "User request: My for loop isn't working. Can you debug this?", "expected": {"tool": "code_debugger"}, "split": "tune"}
+{"state": "User request: I keep getting an infinite loop in my code. How do I fix it?", "expected": {"tool": "code_debugger"}, "split": "tune"}
+{"state": "User request: Where can I learn more about machine learning algorithms online?", "expected": {"tool": "resource_recommender"}, "split": "tune"}
+{"state": "User request: Suggest some good tutorials for learning Python.", "expected": {"tool": "resource_recommender"}, "split": "tune"}
+{"state": "User request: What courses do you recommend for web development?", "expected": {"tool": "resource_recommender"}, "split": "tune"}
+{"state": "User request: Find me documentation on the React library.", "expected": {"tool": "resource_recommender"}, "split": "tune"}
+{"state": "User request: Give me resources to study computer networks.", "expected": {"tool": "resource_recommender"}, "split": "tune"}
+{"state": "User request: I need quantitative aptitude practice for my campus placement test.", "expected": {"tool": "aptitude_coach"}, "split": "tune"}
+{"state": "User request: Help me improve my logical reasoning skills for placements.", "expected": {"tool": "aptitude_coach"}, "split": "tune"}
+{"state": "User request: I want to practice verbal ability questions.", "expected": {"tool": "aptitude_coach"}, "split": "tune"}
+{"state": "User request: Give me English communication exercises for group discussion.", "expected": {"tool": "aptitude_coach"}, "split": "tune"}
+{"state": "User request: I have a TCS NQT exam. Help me with aptitude preparation.", "expected": {"tool": "aptitude_coach"}, "split": "tune"}
+{"state": "User request: How do you work? What tools do you have?", "expected": {"tool": "none"}, "split": "tune"}
+{"state": "User request: Thank you, that was helpful!", "expected": {"tool": "none"}, "split": "tune"}
+{"state": "User request: What topics should I focus on for a software engineering career?", "expected": {"tool": "none"}, "split": "tune"}
+{"state": "User request: I need to improve my communication skills.", "expected": {"tool": "aptitude_coach"}, "split": "tune"}
+{"state": "User request: Generate some tricky interview questions on data structures.", "expected": {"tool": "practice_generator"}, "split": "tune"}
+{"state": "User request: What is time complexity and how do I calculate it?", "expected": {"tool": "concept_explainer"}, "split": "tune"}
+{"state": "User request: I'm confused about pointers in C. Please explain.", "expected": {"tool": "concept_explainer"}, "split": "tune"}
+{"state": "User request: Plan my revision for Computer Organization exam in 7 days.", "expected": {"tool": "exam_planner"}, "split": "tune"}
+{"state": "User request: I want mock test questions for compiler design.", "expected": {"tool": "practice_generator"}, "split": "tune"}
+{"state": "User request: My code throws an AttributeError. Can you help?", "expected": {"tool": "code_debugger"}, "split": "tune"}
+{"state": "User request: Find resources to learn about cloud computing.", "expected": {"tool": "resource_recommender"}, "split": "tune"}
+{"state": "User request: I want quantitative questions on percentages and ratios.", "expected": {"tool": "aptitude_coach"}, "split": "tune"}
+{"state": "User request: Explain what an API is.", "expected": {"tool": "concept_explainer"}, "split": "tune"}
+{"state": "User request: Help me prepare for Infosys placement aptitude round.", "expected": {"tool": "aptitude_coach"}, "split": "tune"}
+{"state": "User request: Give me 20 practice questions on graph algorithms.", "expected": {"tool": "practice_generator"}, "split": "tune"}
+{"state": "User request: What is a REST API?", "expected": {"tool": "concept_explainer"}, "split": "test"}
+{"state": "User request: I have an OS exam in 4 days with 2 hours per day to study.", "expected": {"tool": "exam_planner"}, "split": "test"}
+{"state": "User request: Create 8 MCQ questions on SQL joins.", "expected": {"tool": "practice_generator"}, "split": "test"}
+{"state": "User request: I'm getting a SyntaxError in Python. Here's my code snippet.", "expected": {"tool": "code_debugger"}, "split": "test"}
+{"state": "User request: Recommend tutorials for learning JavaScript.", "expected": {"tool": "resource_recommender"}, "split": "test"}
+{"state": "User request: I want logical reasoning questions for placement preparation.", "expected": {"tool": "aptitude_coach"}, "split": "test"}
+{"state": "User request: Explain what a hash table is.", "expected": {"tool": "concept_explainer"}, "split": "test"}
+{"state": "User request: Plan my study for Software Engineering paper next week.", "expected": {"tool": "exam_planner"}, "split": "test"}
+{"state": "User request: Give me practice problems on graph traversal.", "expected": {"tool": "practice_generator"}, "split": "test"}
+{"state": "User request: My code has a KeyError in a dictionary. Can you debug it?", "expected": {"tool": "code_debugger"}, "split": "test"}
+{"state": "User request: Where can I learn deep learning online?", "expected": {"tool": "resource_recommender"}, "split": "test"}
+{"state": "User request: I need verbal aptitude exercises for Wipro placement.", "expected": {"tool": "aptitude_coach"}, "split": "test"}
