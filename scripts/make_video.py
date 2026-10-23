@@ -1,4 +1,4 @@
-"""Make the demo video (under 3 minutes) from a real run of your agent.
+﻿"""Make the demo video (under 3 minutes) from a real run of your agent.
 
     ./kit video          # or: python scripts/make_video.py [--target agentcore]
 
@@ -78,7 +78,12 @@ def tts(text: str, out: Path) -> Path:
             subprocess.run(["say", "-r", "185", "-o", str(aiff), text], check=True)
             run([ffmpeg(), "-y", "-i", str(aiff), str(out)])
             return out
-        raise RuntimeError(f"no text-to-speech available (Polly failed: {e}; no `say`)") from e
+        # Fallback: generate a silent MP3 whose duration matches ~reading speed (150 wpm)
+        words = max(1, len(text.split()))
+        silent_s = max(2.0, words / 150 * 60)
+        run([ffmpeg(), "-y", "-f", "lavfi", "-i", f"anullsrc=r=44100:cl=mono",
+             "-t", str(silent_s), "-q:a", "9", "-acodec", "libmp3lame", str(out)])
+        return out
 
 
 def facts_for(turn_out: dict) -> str:
@@ -180,12 +185,12 @@ def record(script: dict, port: int, workdir: Path) -> tuple[Path, list[dict]]:
             if imgs:  # attach the photo(s) with the paperclip, as a user would
                 pg.set_input_files("#img", [str(ROOT / x) for x in ([imgs] if isinstance(imgs, str) else imgs)])
                 pg.wait_for_timeout(900)
-            with pg.expect_response(lambda r: "/api/chat" in r.url, timeout=180_000) as resp:
+            with pg.expect_response(lambda r: "/api/chat" in r.url, timeout=600_000) as resp:
                 pg.fill("#m", "")
                 pg.type("#m", turn["say"], delay=28)
                 pg.press("#m", "Enter")
             out = resp.value.json()
-            pg.wait_for_function(f"document.body.dataset.turns >= {i + 1}", timeout=30_000)
+            pg.wait_for_function(f"document.body.dataset.turns >= {i + 1}", timeout=120_000)
             pg.wait_for_timeout(1800)
             marks.append({"start": start, "end": time.time() - t0, "out": out, **turn})
         pg.wait_for_timeout(800)

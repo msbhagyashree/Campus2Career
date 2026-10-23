@@ -1,75 +1,126 @@
 [
  {
-  "start": 1.8564388751983643,
-  "end": 18.861212015151978,
+  "start": 1.9580519199371338,
+  "end": 89.18413949012756,
   "out": {
-   "reply": "Please provide the order ID for the headphones so I can process your refund.",
+   "reply": "Recursion is when a function calls itself to solve a problem. Think of it like peeling an onion: you take off one layer to get to the next, but you repeat this process again and again until you can\u2019t peel anymore.\n\nIn programming, recursion breaks a big task into smaller, similar tasks until it reaches a simple enough version that it doesn't need to be broken down further (this is called the **base case**).\n\n### Real-Life Example: Counting Down\nImagine you need to count from 5 down to 1. You can do this by saying \"Let's start with 5, and then figure out how to count from 4 down to 1.\" The function `countDown(5)` works like this:\n1. It prints the number 5.\n2. Then it asks itself, \"Hey me, how do I count from 4 down to 1?\" (This is the **recursive call**).\n3. Eventually, you want to stop counting before reaching a certain point (in our case, 0), so the function stops repeating once it hits that stopping point (this is the **base case**).\n\n### Small Program: Factorial\nLet's look at how we solve something more complex using recursion, calculating the factorial of a number. The factorial of a number \\(n\\) is written as \\(n!\\) and means multiplying every number from 1 up to \\(n\\). For example, \\(4! = 4 \\times 3 \\times 2 \\times 1 = 24\\).\nThis can be broken down in reverse:\n- \\(4! = 4 \\times 3!\\) (because \\(3! = 3 \\times 2 \\times 1\\))\n- And \\(5! = 5 \\times 4!\\), and so on.\n\nHere is a simple C++ program that calculates the factorial of a number using recursion:\n\n**Code:**\n```cpp\n#include <iostream>\n\n// The recursive function to calculate factorial\nint factorial(int n) {\n    // Base case: stop at 0 or 1 because anything multiplied by them is still itself.\n    if (n <= 1) return 1;\n    \n    // Recursive call: multiply the number with the factorial of the number before it\n    return n * factorial(n - 1);\n}\n\nint main() {\n    int num = 4;\n    \n    std::cout << \"Factorial of \" << num << \" is \" \n              << factorial(num) << \".\\n\";\n              \n    return 0;\n}\n```\n\n**Output:**\n```text\nFactorial of 4 is 24.\n```\n*(To test with other numbers, just change the value of `num` in the `main` function!)*\n\nThe beauty of recursion is that it handles complex problems by repeatedly solving smaller pieces. Keep practicing, and soon it'll feel like second nature! Is there another concept you'd like to explore together?",
    "decisions": [
     {
-     "pattern": "#guardrails",
-     "tool": "refund_order",
-     "args": {
-      "amount": 249.0,
-      "order_id": "A1002"
+     "pattern": "#tool-selection",
+     "tool": "concept_explainer",
+     "confidence": 0.969,
+     "probabilities": {
+      "concept_explainer": 0.969,
+      "exam_planner": 0.003,
+      "practice_generator": 0.003,
+      "code_debugger": 0.003,
+      "resource_recommender": 0.006,
+      "aptitude_coach": 0.001,
+      "none": 0.014
      },
-     "args_grounded": 0.437,
-     "explicit_request": 0.791,
-     "premature": 0.235,
-     "decider_ms": 3075,
-     "verdict": "guide"
+     "verdict": "narrowed",
+     "narrowed": true,
+     "clarify_count": 0,
+     "decider_ms": 2478
     }
    ],
-   "model_id": "us.amazon.nova-pro-v1:0",
-   "latency_ms": 6970,
-   "agent": "Kit example: store support agent",
-   "eager": true,
-   "served_by": "Amazon Bedrock AgentCore Runtime"
+   "model_id": "qwen3.5-4b",
+   "latency_ms": 81310
   },
-  "say": "My headphones are broken, I want my money back.",
-  "narrate": "The customer wants a refund but never says which order."
+  "say": "Explain recursion in C++ in simple terms with a real-life example and show a small program with its output.",
+  "narrate": "A detailed concept request. The decider selects the concept explainer tool."
  },
  {
-  "start": 18.861226797103882,
-  "end": 28.287545919418335,
+  "start": 89.18413949012756,
+  "end": 176.7368199825287,
   "out": {
-   "reply": "Your refund for order A1002 has been processed. You will receive 249.0 back to your original payment method. If you have any further questions, feel free to ask.",
+   "reply": "That\u2019s an urgent but manageable list! Here is your prioritized **4-Hour Operating Systems Crash Study Plan** to crush that tomorrow exam:\n\n### \u23f0 **Hour 1: The Foundation (Priority 1 & 2)**\n*   **Focus:** How the OS works internally.\n    *   **Task 1:** Understand Kernel vs. User space and System Calls (Mem Mgmt).\n    *   **Task 2:** Grasp Process vs. Thread differences and their lifecycle (Proc Sched).\n\n### \u23f0 **Hour 2: Scheduling Deep Dive (Priority 3 & 4)**\n*   **Focus:** How CPU time is allocated.\n    *   **Task 3:** Master the algorithms: FCFS, SJF, RR, Priority.\n    *   **Practice!** Do at least one scheduling calculation problem for each algorithm to get comfortable with formulas. (Mem Mgmt & Deadlocks are usually lighter on math in short exams).\n\n### \u23f0 **Hour 3: Critical Concepts (Priority 5, 6 & 7)**\n*   **Focus:** What breaks the system and how memory is handled.\n    *   **Task 5:** Review Deadlock prevention/detection conditions (Wait-for graph).\n    *   **Task 6:** Learn Paging/Segmentation basics.\n    *   **Task 7:** Understand Page Replacement (FIFO, LRU). *Quick note: Memorize which algorithm performs best and worst for cache hits.*\n\n### \u23f0 **Hour 4: Review & Practice (Priority 8, 9 & 10)**\n*   **Focus:** Putting it together.\n    *   **Task 8:** Skim File Systems concepts (Directory structures, inodes).\n    *   **Task 9:** Briefly review IPC (Pipes/Semaphores) if time permits; often high priority for I/O questions.\n    *   **Task 10:** Go through past exam papers focusing on Scheduling and Memory Management questions.\n\n**\ud83d\udca1 Pro Tip:** Stick to this order. Tackle the conceptual foundations first, then drill into the math-heavy scheduling section while you have enough energy, and finish with quick recall reviews before bed!\n\nGot it? Ready to start Hour 1?",
    "decisions": [
     {
-     "pattern": "#guardrails",
-     "tool": "refund_order",
-     "args": {
-      "amount": 249,
-      "order_id": "A1002"
+     "pattern": "#tool-selection",
+     "tool": "exam_planner",
+     "confidence": 0.729,
+     "probabilities": {
+      "concept_explainer": 0.136,
+      "exam_planner": 0.729,
+      "practice_generator": 0.02,
+      "code_debugger": 0.008,
+      "resource_recommender": 0.012,
+      "aptitude_coach": 0.004,
+      "none": 0.09
      },
-     "args_grounded": 0.608,
-     "explicit_request": 0.894,
-     "premature": 0.128,
-     "decider_ms": 3894,
-     "verdict": "proceed"
+     "verdict": "narrowed",
+     "narrowed": true,
+     "clarify_count": 0,
+     "decider_ms": 6672
     }
    ],
-   "model_id": "us.amazon.nova-pro-v1:0",
-   "latency_ms": 5813,
-   "agent": "Kit example: store support agent",
-   "eager": true,
-   "served_by": "Amazon Bedrock AgentCore Runtime"
+   "model_id": "qwen3.5-4b",
+   "latency_ms": 82096
   },
-  "say": "It's order A1002, refund the full amount please.",
-  "narrate": "Now the customer gives the order id and asks for the refund explicitly."
+  "say": "I have my Operating Systems exam tomorrow and only a few hours to study. Build me a study plan.",
+  "narrate": "The student names the subject and the deadline. The decider selects the exam planner tool."
  },
  {
-  "start": 28.287585020065308,
-  "end": 32.838441133499146,
+  "start": 176.7368199825287,
+  "end": 191.013991355896,
   "out": {
-   "reply": "Once an order has shipped, it cannot be cancelled. However, you can still request a refund after receiving the item. If you have any further questions, feel free to ask.",
-   "decisions": [],
-   "model_id": "us.amazon.nova-pro-v1:0",
-   "latency_ms": 940,
-   "agent": "Kit example: store support agent",
-   "eager": true,
-   "served_by": "Amazon Bedrock AgentCore Runtime"
+   "reply": "I want to help! Could you give me a bit more detail about what you need? For example: a topic to explain, an exam to plan for, practice questions, code to debug, resources, or aptitude exercises.",
+   "decisions": [
+    {
+     "pattern": "#tool-selection",
+     "tool": "code_debugger",
+     "confidence": 0.516,
+     "probabilities": {
+      "concept_explainer": 0.406,
+      "exam_planner": 0.024,
+      "practice_generator": 0.004,
+      "code_debugger": 0.516,
+      "resource_recommender": 0.003,
+      "aptitude_coach": 0.001,
+      "none": 0.046
+     },
+     "verdict": "clarify",
+     "narrowed": false,
+     "clarify_count": 1,
+     "decider_ms": 8960
+    }
+   ],
+   "model_id": "qwen3.5-4b",
+   "latency_ms": 8961
   },
-  "say": "Is it possible to cancel an order after it ships?",
-  "narrate": "This one is a question, not a request to act."
+  "say": "My C++ code uses if (a = 0) but it should be if (a == 0). What is wrong and how do I fix it?",
+  "narrate": "A clear code debugging request. The decider selects the code debugger tool and returns numbered fix steps."
+ },
+ {
+  "start": 191.013991355896,
+  "end": 233.00030398368835,
+  "out": {
+   "reply": "Alright, let's dive right in. We'll keep our focus tight for these next few hours to ensure you retain the most critical parts of the Operating Systems syllabus.\n\nLet's begin with the absolute bedrock: **Operating System Architecture**. This covers memory management and how processes interact with the hardware, which is crucial for understanding everything else (like scheduling).\n\n### **Topic: Process State & CPU Scheduling Basics**\nBefore we jump into algorithms, you need to know what actually gets scheduled.\n*   **Wait state:** The process hasn't been assigned a CPU. It's waiting for I/O or another event.\n*   **Running state:** The process is currently using the CPU (executing instructions).\n*   **Ready state:** The process has all resources needed except the CPU. It's sitting on queue, ready to run.\n\n**Key Question for you:** When a process moves from \"Ready\" to \"Run\", what happens in terms of memory access rights? (Hint: It gains specific privileges but loses protection boundaries).",
+   "decisions": [
+    {
+     "pattern": "#tool-selection",
+     "tool": "exam_planner",
+     "confidence": 0.856,
+     "probabilities": {
+      "concept_explainer": 0.106,
+      "exam_planner": 0.856,
+      "practice_generator": 0.006,
+      "code_debugger": 0.003,
+      "resource_recommender": 0.002,
+      "aptitude_coach": 0.001,
+      "none": 0.027
+     },
+     "verdict": "narrowed",
+     "narrowed": true,
+     "clarify_count": 0,
+     "decider_ms": 9762
+    }
+   ],
+   "model_id": "qwen3.5-4b",
+   "latency_ms": 39407
+  },
+  "say": "Just help me study.",
+  "narrate": "An ambiguous request with no subject or task specified. The decider is unsure and the agent asks the student to clarify."
  }
 ]

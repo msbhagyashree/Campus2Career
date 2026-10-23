@@ -1,4 +1,4 @@
-# Campus2Career — AI Exam-Prep Tutor
+# StudyPilot — AI Exam-Prep Tutor
 
 ## Use case
 

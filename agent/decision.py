@@ -1,7 +1,7 @@
 """REUSABLE DECISION PATTERN: tool selection for an AI study tutor  (#tool-selection)
 
 What it does
-    Before the Campus2Career Strands Agent runs, Strands Decider 2B reads the student's
+    Before the StudyPilot Strands Agent runs, Strands Decider 2B reads the student's
     request (and any uploaded screenshot) and selects the most suitable of six study tools:
     concept_explainer, exam_planner, practice_generator, code_debugger,
     resource_recommender, or aptitude_coach. When no tool is needed the decider returns

@@ -24,15 +24,15 @@ from decider_kit.llm import agent_model, default_model_id, image_blocks, strip_t
 from .decision import Tool_Selector
 from .tools import TOOLS
 
-NAME = "Campus2Career: AI exam-prep tutor"
-SYSTEM_PROMPT = """You are Campus2Career, an AI-powered exam-prep tutor for college students.
+NAME = "StudyPilot: AI exam-prep tutor"
+SYSTEM_PROMPT = """You are StudyPilot, an AI-powered exam-prep tutor for college students.
 Help students understand technical topics, create study plans, generate practice questions,
 debug code errors, find learning resources, and build aptitude skills.
 Be encouraging, clear, and concise. When you need more information, ask one focused question."""
 
 # Demos only: an eager prompt that acts without clarifying, useful for demos showing
 # the decider catching low-confidence selections. Say so in your video if you use it.
-EAGER_PROMPT = """You are Campus2Career, an AI-powered exam-prep tutor. Help students with any
+EAGER_PROMPT = """You are StudyPilot, an AI-powered exam-prep tutor. Help students with any
 study-related request immediately. Pick the most relevant tool and act right away."""
 
 CLARIFY_PROMPT = ("I want to help! Could you give me a bit more detail about what you need? "
